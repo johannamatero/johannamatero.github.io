@@ -50,7 +50,7 @@ export const Projects = () => {
                         </h2>
                         <p> Here is some very interesting and enlightning text about my previous projects. </p> 
                         <Tab.Container id="project-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" defaultActiveKey="/home">
+                            <Nav variant="pills"  className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab 1</Nav.Link>
                                 </Nav.Item>
@@ -60,7 +60,7 @@ export const Projects = () => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="third"> Tab 3 </Nav.Link>
                                 </Nav.Item>
-                                </Nav>
+                            </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
@@ -83,7 +83,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img src={colorSharp2} />
+            <img className="background-image-right" src={colorSharp2} alt=""/>
         </section>
       )
 }
